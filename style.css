@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+}
+/* background color applied to the body */
+body{
+    background-color: #1c88c7
+}
+
+.wrapper{
+    width: 400px;
+    border: none;
+    outline: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50% ;
+    left: 50%;
+
+}
+.container{
+    width: 100%;
+    background-color: #51768b;
+    padding: 50px 40px;
+    box-shadow:  0 20px 30px rgba(0, 0,0, 3);
+    position: relative;
+    text-align: center;
+    border: 1px solid;
+    outline: none;
+    border-radius: 16px;
+
+
+}
+
+.container::after{
+    content: "Quote Generator";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: whitesmoke;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+    font-weight: 700;
+    font-size: 25px;
+    color: red;
+}
+.container p{
+    color: whitesmoke;
+    line-height: 2;
+    font-size: 18px;
+}
+.container .footer{
+    color: whitesmoke;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container button{
+    background-color: #fff;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1c88c7;
+    cursor: pointer;
+    
+}
+.container h3{
+    color: white;
+    margin: 20px  0 60px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@media(max-width:550px ){
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 400px;
+        width: 100%;
+        border: none;
+        outline: none;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50% ;
+        left: 50%;
+    
+    }
+   
+}
