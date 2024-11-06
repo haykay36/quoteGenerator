@@ -21,7 +21,7 @@ body{
 }
 .container{
     width: 100%;
-    background-color: #51768b;
+    background-color: #1c88c7;
     padding: 50px 40px;
     box-shadow:  0 20px 30px rgba(0, 0,0, 3);
     position: relative;
@@ -44,7 +44,8 @@ body{
     left: 10%;
     font-weight: 700;
     font-size: 25px;
-    color: red;
+    color: #1c88c7;
+    margin-top: 10px;
 }
 .container p{
     color: whitesmoke;
@@ -76,12 +77,15 @@ body{
     text-transform: uppercase;
 }
 @media(max-width:550px ){
+    body{
+        background-color: red
+    }
 
     .wrapper{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-width: 400px;
+        max-width: 250px;
         width: 100%;
         border: none;
         outline: none;
@@ -91,5 +95,43 @@ body{
         left: 50%;
     
     }
-   
+    .container{
+        width: 100%;
+        background-color: red;
+        padding: 50px 40px;
+        box-shadow:  0 20px 30px rgba(0, 0,0, 3);
+        position: relative;
+        text-align: center;
+        border: 1px solid;
+        outline: none;
+        border-radius: 16px;
+    
+    
+    }
+    .container::after{
+        content: "Quote Generator";
+        position: absolute;
+        width: 80%;
+        height: 120%;
+        background-color: whitesmoke;
+        z-index: -1;
+        top: -10%;
+        left: 10%;
+        font-weight: 700;
+        font-size: 20px;
+        color: red;
+        margin-top: 20px;
+    }
+    
+    .container button{
+        background-color: #fff;
+        border: none;
+        padding: 15px 45px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        color: red;
+        cursor: pointer;
+        
+    }
 }

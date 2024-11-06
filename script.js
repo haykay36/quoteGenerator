@@ -10,7 +10,7 @@ fetch('https://quotes-api-self.vercel.app/quote')
   .then(response => response.json())
   .then(data => {
     // Handle the retrieved quote
-    console.log(data.content);
+    console.log(data.quote);
     console.log(data.author);
     quote.innerText = data.quote;
     author.innerText = data.author;
